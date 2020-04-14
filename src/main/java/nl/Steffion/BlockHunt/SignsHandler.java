@@ -1,13 +1,13 @@
 package nl.Steffion.BlockHunt;
 
 import java.util.ArrayList;
-import nl.Steffion.BlockHunt.Arena.ArenaState;
-import nl.Steffion.BlockHunt.Managers.MessageManager;
 
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.block.Sign;
 import org.bukkit.event.block.SignChangeEvent;
+
+import nl.Steffion.BlockHunt.Arena.ArenaState;
+import nl.Steffion.BlockHunt.Managers.MessageManager;
 
 public class SignsHandler {
 
