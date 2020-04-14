@@ -1,15 +1,14 @@
 package nl.Steffion.BlockHunt.Listeners;
 
-import nl.Steffion.BlockHunt.Arena;
-import nl.Steffion.BlockHunt.ArenaHandler;
-import nl.Steffion.BlockHunt.MemoryStorage;
-
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
+
+import nl.Steffion.BlockHunt.Arena;
+import nl.Steffion.BlockHunt.ArenaHandler;
+import nl.Steffion.BlockHunt.MemoryStorage;
 
 public class OnPlayerQuitEvent implements Listener {
 
@@ -24,9 +23,9 @@ public class OnPlayerQuitEvent implements Listener {
 		}
 	}
 
-	@EventHandler(priority = EventPriority.HIGHEST)
-	public void onPlayerJoinEvent(PlayerJoinEvent event) {
-		Player playerJoining = event.getPlayer();
-		playerJoining.teleport(playerJoining.getWorld().getSpawnLocation());
-	}
+//	@EventHandler(priority = EventPriority.HIGHEST)
+//	public void onPlayerJoinEvent(PlayerJoinEvent event) {
+//		Player playerJoining = event.getPlayer();
+//		playerJoining.teleport(playerJoining.getWorld().getSpawnLocation());
+//	}
 }
